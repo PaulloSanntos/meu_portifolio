@@ -1,0 +1,144 @@
+.cabeçalho{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40em 0 9%;
+    
+    
+}
+
+
+
+.cabeçalho__logo{
+
+    margin-right: 5em;
+    margin-top: 4.3em;
+}
+
+.cabeçalho__navegação{
+
+
+    margin-right: 5em;
+    margin-left: 30vw;
+    
+    
+}
+
+
+.cabeçalho__navegação__link{
+    margin: 3.7em 20% 0 0%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: inherit;
+    
+}
+.cabeçalho__navegação__links{
+    display: flex;
+    justify-content: space-between;
+
+    gap:15px;
+    font-family: "open sans", sans-serif;
+    font-size: 24px;
+    color: var(--cor-bloco);
+    font-weight: 300;
+}
+
+.titulo__pagina{
+    font-family: var(--titulo-fonte);
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--azul-escuro);
+    white-space: nowrap;
+    margin-top: 2em;
+    margin-right: 2vw;
+
+    text-decoration: none;
+
+    
+}
+
+.container, .lista-menu{
+    display: none;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .cabeçalho{
+        margin: 0 ;
+        background-color: var(--azul-claro);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+        gap: 50%;
+    }
+    .cabeçalho__logo{
+        margin: 0;
+    }
+
+    .titulo__pagina{
+        display: none;
+    }
+    .cabeçalho__navegação{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        
+
+    }
+
+    .container__botao:checked ~.lista-menu{
+        display: block;
+    }
+
+    .container__botao{
+        display: none;
+    }
+    .cabecalho__menu{
+        background-image: url("../imagens/Vector.svg");
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        
+
+    }
+    .lista-menu{
+ 
+        position: absolute;
+        top: 100%;
+        width: 60vw;
+       
+        border: 1px, solid, var(--azul-escuro);
+        border-bottom-right-radius: 31px;
+        border-bottom-left-radius: 31px;
+        background-color: var(--azul-claro);
+        font-family: var(--titulo-fonte);
+        font-size: 24px;
+        white-space: nowrap;
+        padding: .3em .3em;
+        
+        
+        
+
+    }
+    .lista-menu__link{
+        text-decoration: none;
+        background-clip: text;
+        color: var(--back-ground);
+        padding: .5em;
+        
+    }
+
+    .lista-menu__item{
+      color: var(--back-ground);
+      padding: .3em .3em;
+
+    }
+
+    
+    
+}

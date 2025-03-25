@@ -1,0 +1,40 @@
+@import url(styles.css/cabecalho.css);
+@import url(styles.css/descricao.css);
+@import url(styles.css/sobre-mim.css);
+@import url(styles.css/projetos.css);
+@import url(styles.css/contato.css);
+
+:root{
+    --back-ground:#EEF0EB;
+    --azul-escuro:#153243;
+    --azul-claro:#284B63;
+    --cor-bloco:#F4F9E9;
+    --titulo-fonte:"Roboto Mono";
+    --texto-fonte:"Open Sans";
+    --cinza-menu:#B4B8AB;
+}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        to right, 
+        var(--back-ground) 0%,
+        var(--back-ground) 55%,
+        var(--azul-claro) 55%,
+        var(--azul-claro) 100% 
+        
+    ) fixed;
+ 
+}
+
+@media screen and (max-width:1000px){
+    body{
+        background: var(--back-ground);
+
+    }
+    
+}
+
+
